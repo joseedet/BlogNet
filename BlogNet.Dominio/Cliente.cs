@@ -9,7 +9,7 @@ namespace BlogNet.Dominio
     {
         public int IdCliente { get; set; }
         public int IdTipoDocumento { get; set; }
-        public string NombreComercial{ get; set; }
+        public string RazonSocial{ get; set; }
         public string NombreContacto { get; set; }
         public string ApellidosContactos { get; set; }
         public string Direccion { get; set; }
