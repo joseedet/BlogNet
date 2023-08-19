@@ -1,11 +1,20 @@
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using FluentValidation;
-using FluentValidation.AspNetCore;
+using Microsoft.EntityFrameworkCore;
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
+using BlogNet.Persistencia;
 
+//using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+var mysqlversion = new MySqlServerVersion(new Version(8, 0, 31));
+var contectionstring =builder.Configuration.GetConnectionString("BlogSqlServer");
+builder.Services
+ .AddDbContext<BlogNetContext>(options =>
+    {
+        
+        options.UseMySql(contectionstring,ServerVersion.AutoDetect(contectionstring));
+    });
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

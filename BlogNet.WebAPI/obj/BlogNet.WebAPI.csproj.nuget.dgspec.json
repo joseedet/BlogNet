@@ -4,14 +4,81 @@
     "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj": {}
   },
   "projects": {
-    "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj": {
+    "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/BlogNet.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj",
-        "projectName": "BlogNet.WebAPI",
-        "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj",
+        "projectUniqueName": "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/BlogNet.Aplicacion.csproj",
+        "projectName": "BlogNet.Aplicacion",
+        "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/BlogNet.Aplicacion.csproj",
         "packagesPath": "/home/morfeo/.nuget/packages/",
-        "outputPath": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/obj/",
+        "outputPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/morfeo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/BlogNet.Persistencia.csproj": {
+                "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/BlogNet.Persistencia.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj",
+        "projectName": "BlogNet.Dominio",
+        "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj",
+        "packagesPath": "/home/morfeo/.nuget/packages/",
+        "outputPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/morfeo/.nuget/NuGet/NuGet.Config"
@@ -37,10 +104,146 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/BlogNet.Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/BlogNet.Persistencia.csproj",
+        "projectName": "BlogNet.Persistencia",
+        "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/BlogNet.Persistencia.csproj",
+        "packagesPath": "/home/morfeo/.nuget/packages/",
+        "outputPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Persistencia/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/morfeo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj": {
+                "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj",
+        "projectName": "BlogNet.WebAPI",
+        "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/BlogNet.WebAPI.csproj",
+        "packagesPath": "/home/morfeo/.nuget/packages/",
+        "outputPath": "/home/morfeo/Documentos/BlogNet/BlogNet.WebAPI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/morfeo/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/BlogNet.Aplicacion.csproj": {
+                "projectPath": "/home/morfeo/Documentos/BlogNet/BlogNet.Aplicacion/BlogNet.Aplicacion.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -66,7 +269,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.109/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/7.0.110/RuntimeIdentifierGraph.json"
         }
       }
     }

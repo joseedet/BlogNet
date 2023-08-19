@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7kTGQMm81OrMNV4R8IkBKuwXcKpiKeDvm/5/rwNR8MJWiKYHsb/CYXlTL6u1kjntlh5MF0FtKuUaCG4OGRbung==",
+  "dgSpecHash": "QlWQhDeN58MhjDEuMgArr/XQKTWG2yME0riYACcVv5gM+PxArUSzXLzF8oYrWrYhwvNTFCvckuc8YgqEsSWTCA==",
   "success": true,
-  "projectFilePath": "/home/morfeo/Documentos/BlogNet/BlogNet.Models/BlogNet.Models.csproj",
+  "projectFilePath": "/home/morfeo/Documentos/BlogNet/BlogNet.Dominio/BlogNet.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
