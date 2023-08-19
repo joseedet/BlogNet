@@ -2,18 +2,19 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using BlogNet.Dominio;
 
 namespace BlogNet.Persistencia
 {
-    public class BlogNetContext
+    public class BlogNetContext:DbContext
     {
-        public class BlogNetContext: DbContext
-        {
-        public BlogNetContext(DbContextOptions options):base(options)
+
+        public BlogNetContext(DbContextOptions options) : base(options)
         {
              
         }      
-        public DbSet <Alamacen> Almacen { get; set; }
+        //public DbSet <Alamacen> Almacen { get; set; }
         public DbSet <Cliente> Cliente { get; set; }
         public DbSet <Departamento> Departamento { get; set; }
         public DbSet  <IVA> IVA { get; set; }
@@ -22,5 +23,5 @@ namespace BlogNet.Persistencia
         public DbSet  <TipoDocumento> TipoDocumento{ get; set; }
         
     }
-    }
+    
 }
