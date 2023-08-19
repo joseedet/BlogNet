@@ -7,7 +7,8 @@ using BlogNet.Persistencia;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var mysqlversion = new MySqlServerVersion(new Version(8, 0, 31));
+//var mysqlversion = new MySqlServerVersion(new Version(8, 0, 31));
+#nullable enable 
 var contectionstring =builder.Configuration.GetConnectionString("BlogSqlServer");
 builder.Services
  .AddDbContext<BlogNetContext>(options =>
